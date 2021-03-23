@@ -6,7 +6,7 @@
 
 package inheritanceTask2;
 import java.time.LocalDate;
-import java.util.Date;
+import java.time.Period;
 
 /**
  * IKIN HASANOV's response to Homework [x], Module [x].
@@ -32,6 +32,9 @@ public class Person {
     private String address;
     private String phoneNumber;
     private String email;
+
+    public Person() {
+    }
 
     public Person(String firstName, String lastName, boolean isMarried,
                   LocalDate birthday, String bloodGroup, boolean isFemale,
@@ -147,8 +150,8 @@ public class Person {
         this.email = email;
     }
 
-    public int getAge() {
-        int age = 0;
+    public Period getAge() {
+        Period age = Period.between(getBirthday(), LocalDate.now());
         return age;
     }
 }
