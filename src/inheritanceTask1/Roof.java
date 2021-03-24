@@ -9,11 +9,11 @@ package inheritanceTask1;
  * IKIN HASANOV's response to Homework "Inheritance", Module 2.
  *
  *   Task:
- *
+ *      Create a child  from the class Rectangle
  *
  * @version 1.10
  * @Since 21-03-2021
- * @class
+ * @class Rectangle
  * @author Ilkin Hasanov
  */
 public class Roof extends Rectangle {

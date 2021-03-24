@@ -3,19 +3,18 @@ package inheritanceTask2;/**
  * <p>
  * Copyright (c) HASANOV.
  */
-//package ;
 
 import java.time.LocalDate;
 
 /**
- * IKIN HASANOV's response to Homework [x], Module [x].
+ * IKIN HASANOV's response to Homework "Inheritance", Module 2.
  *
  *   Task:
- *
+ *      Create a class Person and a class Student as  its daughter.  25 fields.
  *
  * @version 1.10
- * @Since [DD] [MMM] [YYYY]
- * @class
+ * @Since 21-03-2021
+ * @class Person
  * @author Ilkin Hasanov
  */
 public class Student extends Person{

@@ -7,14 +7,14 @@ package inheritanceTask1; /**
 import java.util.Objects;
 
 /**
- * IKIN HASANOV's response to Homework [x], Module [x].
+ * IKIN HASANOV's response to Homework "Inheritance", Module 2.
  *
  *   Task:
- *
+ *      Create a child  from the class Rectangle
  *
  * @version 1.10
- * @Since [DD] [MMM] [YYYY]
- * @class
+ * @Since 21-03-2021
+ * @class Rectangle
  * @author Ilkin Hasanov
  */
 public class Rectangle {
