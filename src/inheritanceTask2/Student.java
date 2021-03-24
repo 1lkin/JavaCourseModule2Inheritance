@@ -196,4 +196,25 @@ public class Student extends Person{
     public void setArtClubMember(boolean artClubMember) {
         isArtClubMember = artClubMember;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                super.toString() +
+                "studentID=" + this.getStudentID() +
+                ", university='" + this.getUniversity() + '\'' +
+                ", degree=" + this.getDegree() +
+                ", faculty='" + this.getFaculty() + '\'' +
+                ", department='" + this.getDepartment() + '\'' +
+                ", speciality=" + this.getSpeciality() +
+                ", enrolmentYear=" + this.getEnrolmentYear() +
+                ", averageGrade=" + this.getAverageGrade() +
+                ", numOfCourses=" + this.getNumOfCourses() +
+                ", language=" + this.getLanguage() +
+                ", isExhibitioner=" + this.isExhibitioner() +
+                ", isLibraryMember=" + this.isLibraryMember() +
+                ", isSportClubMember=" + this.isSportClubMember() +
+                ", isArtClubMember=" + this.isArtClubMember() +
+                '}';
+    }
 }

@@ -81,18 +81,18 @@ public class Rectangle {
     @Override
     public String toString() {
         return "inheritance.Rectangle\n===========================\n" +
-                "||\tlength:\t\t" + length +
-                "\n||\twidth:\t\t" + width +
-                "\n||\tpeimeter:\t" + getPerimeter() +
-                "\n||\tarea:\t\t" + getArea() +
-                "\n||\tdiagonal:\t" + getDiagonal() +
-                "\n||\tsquare:\t\t" + isSquare() +
+                "||\tlength:\t\t" + this.getLength() +
+                "\n||\twidth:\t\t" + this.getWidth() +
+                "\n||\tpeimeter:\t" + this.getPerimeter() +
+                "\n||\tarea:\t\t" + this.getArea() +
+                "\n||\tdiagonal:\t" + this.getDiagonal() +
+                "\n||\tsquare:\t\t" + this.isSquare() +
                 "\n===========================\n";
     }
     public String toString(String name){
         return name +
-                "length=" + length +
-                ", width=" + width +
+                "length=" + this.getLength() +
+                ", width=" + this.getWidth() +
                 '}';
     }
     // 5. Override hash() and equals() methods.

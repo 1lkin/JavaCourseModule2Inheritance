@@ -62,7 +62,19 @@ public class Roof extends Rectangle {
         this.thickness = thickness;
     }
 
-    public double getPrice() {
+    public double getTotalPrice() {
         return getLength() * getWidth() * getMaterialPrice() * getThickness();
+    }
+
+    @Override
+    public String toString() {
+        return "Roof{" +
+                "length: " + super.getLength() +
+                ", width: " + super.getWidth() +
+                ", color: " + this.getColor() +
+                ", materialPrice: " + this.getMaterialPrice() +
+                ", thickness: " + this.getThickness() +
+                ", total price: " + this.getTotalPrice() +
+                '}';
     }
 }

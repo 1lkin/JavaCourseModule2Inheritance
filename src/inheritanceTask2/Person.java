@@ -154,4 +154,22 @@ public class Person {
         Period age = Period.between(getBirthday(), LocalDate.now());
         return age;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + this.getFirstName() + '\'' +
+                ", lastName='" + this.getLastName() + '\'' +
+                ", isMarried=" + this.isMarried() +
+                ", birthday=" + this.getBirthday() +
+                ", bloodGroup='" + this.getBloodGroup() + '\'' +
+                ", isFemale=" + this.isFemale() +
+                ", isMale=" + this.isMale() +
+                ", citizenship='" + this.getCitizenship() + '\'' +
+                ", passportID=" + this.getPassportID() +
+                ", address='" + this.getAddress() + '\'' +
+                ", phoneNumber='" + this.getPhoneNumber() + '\'' +
+                ", email='" + this.getEmail() + '\'' +
+                '}';
+    }
 }
