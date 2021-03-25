@@ -7,6 +7,7 @@
 package inheritanceTask2;
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.temporal.ChronoUnit;
 
 /**
  * IKIN HASANOV's response to Homework "Inheritance", Module 2.
@@ -150,9 +151,9 @@ public class Person {
         this.email = email;
     }
 
-    public Period getAge() {
-        Period age = Period.between(getBirthday(), LocalDate.now());
-        return age;
+    public int getAge() {
+        return (int) ChronoUnit.YEARS.between(this.getBirthday(),
+                                                 LocalDate.now());
     }
 
     @Override
